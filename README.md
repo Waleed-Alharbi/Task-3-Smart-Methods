@@ -87,4 +87,3 @@ robot-arm-control/
 
 **Waleed Alharbi**  
 Student at Qassim University  
-ID: 431108129
