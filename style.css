@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+input[type=range] {
+    width: 150px;
+}
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
