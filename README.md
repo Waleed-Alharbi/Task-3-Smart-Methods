@@ -1,43 +1,43 @@
-# Robot Arm Control Panel
+# 🤖 Robot Arm Control Panel
 
-A simple web-based control panel for a robot arm using HTML, CSS, JavaScript, PHP, and MySQL.  
-The system allows users to control six motors, save motor poses, load saved poses, remove poses, and run the selected pose.
+A simple web-based control panel for a robot arm.  
+The system allows users to control six motors using sliders, save motor poses, load saved poses, remove poses, and run the selected pose.
 
 ---
 
-## Project Preview
+## 📸 Project Preview
 
-### Main Interface
+### 🕹️ Main Control Interface
 
 <p align="center">
   <img src="screenshots/interface-empty.png" width="900">
 </p>
 
-The main interface provides six sliders, each representing one motor of the robot arm.
+This screen shows the main robot arm control panel with six motor sliders.
 
 ---
 
-### Saved Poses
+### 💾 Saved Motor Poses
 
 <p align="center">
   <img src="screenshots/interface-with-poses.png" width="900">
 </p>
 
-Saved motor positions are displayed in a table. Each saved pose can be loaded or removed.
+Saved poses are displayed in a table, with options to load or remove each pose.
 
 ---
 
-### Database Preview
+### 🗄️ Database Preview
 
 <p align="center">
   <img src="screenshots/database-preview.png" width="900">
 </p>
 
-The saved poses are stored in a MySQL database using phpMyAdmin.
+The motor poses are stored in a MySQL database using phpMyAdmin.
 
 ---
 
-### Code Preview
+### 💻 Code Preview
 
 <p align="center">
   <img src="screenshots/code-preview.png" width="900">
@@ -47,19 +47,19 @@ The project was developed using HTML, CSS, JavaScript, PHP, and MySQL.
 
 ---
 
-## Features
+## ✨ Features
 
-- Control 6 robot arm motors using sliders
-- Save motor positions as poses
-- Load saved poses
-- Remove saved poses
-- Reset motor values
-- Store poses in MySQL database
-- Simple web-based interface
+- 🎚️ Control 6 robot arm motors using sliders
+- 💾 Save motor positions as poses
+- 📥 Load saved poses
+- 🗑️ Remove saved poses
+- 🔄 Reset motor values
+- 🗄️ Store poses in MySQL database
+- 🌐 Simple web-based interface
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - HTML
 - CSS
@@ -71,7 +71,7 @@ The project was developed using HTML, CSS, JavaScript, PHP, and MySQL.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 robot-arm-control/
@@ -87,7 +87,7 @@ robot-arm-control/
 
 ---
 
-## Setup and Run Locally
+## 🚀 Setup and Run Locally
 
 ### Requirements
 
@@ -95,7 +95,7 @@ robot-arm-control/
 - MySQL
 - Modern web browser
 
-### Steps
+### Installation Steps
 
 1. Start Apache and MySQL from XAMPP.
 
@@ -131,17 +131,17 @@ http://localhost/smart_task3/
 
 ---
 
-## Important Note
+## ⚠️ Important Note
 
-This project was developed for training and learning purposes in a local environment.  
+This project was developed for training and learning purposes in a local environment using XAMPP.  
 It is not intended for production use without additional security, validation, and deployment improvements.
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 - Improve the user interface design
-- Add authentication
+- Add user authentication
 - Add input validation
 - Connect with real robot arm hardware
 - Add real-time robot status feedback
@@ -149,6 +149,6 @@ It is not intended for production use without additional security, validation, a
 
 ---
 
-## Author
+## 👤 Author
 
-Waleed Alharbi
+**Waleed Alharbi**
