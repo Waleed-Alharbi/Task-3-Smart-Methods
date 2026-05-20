@@ -1,89 +1,154 @@
 # Robot Arm Control Panel
 
-This project is a simple web-based interface to control a robot arm using sliders. It allows the user to save, load, and run predefined motor positions, which are stored in a MySQL database.
+A simple web-based control panel for a robot arm using HTML, CSS, JavaScript, PHP, and MySQL.  
+The system allows users to control six motors, save motor poses, load saved poses, remove poses, and run the selected pose.
 
 ---
 
-## 💡 Features
+## Project Preview
 
-- Web interface to control 6 motors.
-- Save and load poses from a database.
-- Update status flag in the database.
-- Reset motor values to default.
-- Clean and simple UI using HTML, CSS, JavaScript, and PHP.
+### Main Interface
 
----
+<p align="center">
+  <img src="screenshots/interface-empty.png" width="900">
+</p>
 
-## 🔧 Technologies Used
-
-- HTML, CSS, JavaScript (Frontend)
-- PHP (Backend)
-- MySQL with phpMyAdmin (Database)
-- XAMPP (Local development server)
+The main interface provides six sliders, each representing one motor of the robot arm.
 
 ---
 
-## 🗂 Project Structure
+### Saved Poses
 
-```
+<p align="center">
+  <img src="screenshots/interface-with-poses.png" width="900">
+</p>
+
+Saved motor positions are displayed in a table. Each saved pose can be loaded or removed.
+
+---
+
+### Database Preview
+
+<p align="center">
+  <img src="screenshots/database-preview.png" width="900">
+</p>
+
+The saved poses are stored in a MySQL database using phpMyAdmin.
+
+---
+
+### Code Preview
+
+<p align="center">
+  <img src="screenshots/code-preview.png" width="900">
+</p>
+
+The project was developed using HTML, CSS, JavaScript, PHP, and MySQL.
+
+---
+
+## Features
+
+- Control 6 robot arm motors using sliders
+- Save motor positions as poses
+- Load saved poses
+- Remove saved poses
+- Reset motor values
+- Store poses in MySQL database
+- Simple web-based interface
+
+---
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+- XAMPP
+- phpMyAdmin
+
+---
+
+## Project Structure
+
+```text
 robot-arm-control/
-├── index.html             # Main user interface
-├── style.css              # UI styling
-├── script.js              # JavaScript for dynamic control
-├── db.php                 # Database connection file
-├── get_run_pose.php       # Insert, retrieve and delete poses
-├── update_status.php      # Update status to 0
-└── poses.sql              # SQL script to create the database table
+├── index.html
+├── style.css
+├── script.js
+├── db.php
+├── get_run_pose.php
+├── update_status.php
+├── poses.sql
+└── screenshots/
 ```
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup and Run Locally
 
-1. **Install XAMPP** and start **Apache** and **MySQL**.
+### Requirements
 
-2. **Create Database**:
-   - Open `http://localhost/phpmyadmin`
-   - Create a new database named `robot_arm`
-   - Import `poses.sql` file to create the required table.
+- XAMPP or any local PHP server
+- MySQL
+- Modern web browser
 
-3. **Place Project Files**:
-   - Copy all project files to: `C:\xampp\htdocs\robot-arm-control`
+### Steps
 
-4. **Access the Interface**:
-   - Open: `http://localhost/robot-arm-control/index.html`
+1. Start Apache and MySQL from XAMPP.
+
+2. Open phpMyAdmin:
+
+```text
+http://localhost/phpmyadmin
+```
+
+3. Create a database named:
+
+```text
+robot_arm
+```
+
+4. Import the SQL file:
+
+```text
+poses.sql
+```
+
+5. Move the project folder into:
+
+```text
+C:\xampp\htdocs\
+```
+
+6. Open the project in your browser:
+
+```text
+http://localhost/smart_task3/
+```
 
 ---
 
-## 📁 Database Table (poses)
+## Important Note
 
-| Column   | Type     | Description               |
-|----------|----------|---------------------------|
-| id       | INT      | Auto increment ID         |
-| motor1   | INT      | Motor 1 position          |
-| motor2   | INT      | Motor 2 position          |
-| motor3   | INT      | Motor 3 position          |
-| motor4   | INT      | Motor 4 position          |
-| motor5   | INT      | Motor 5 position          |
-| motor6   | INT      | Motor 6 position          |
-| status   | INT      | Status flag (default = 0) |
+This project was developed for training and learning purposes in a local environment.  
+It is not intended for production use without additional security, validation, and deployment improvements.
 
 ---
 
-## 📷 Screenshot
+## Future Improvements
 
-![Robot Arm UI](screenshot.png)
-
----
-
-## 📌 Notes
-
-- This project is developed for training purposes at **Smart Methods**.
-- You can expand it to integrate with real motors using Arduino or ESP32.
+- Improve the user interface design
+- Add authentication
+- Add input validation
+- Connect with real robot arm hardware
+- Add real-time robot status feedback
+- Improve database security
 
 ---
 
-## 📤 Author
+## Author
 
-**Waleed Alharbi**  
-Student at Qassim University  
+Waleed Alharbi
